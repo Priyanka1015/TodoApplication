@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { TodoService } from '../../services/todo.service';
 
 import { Todo } from '../../models/Todo';
+import { element, by } from 'protractor';
+import { isUndefined } from 'util';
 
 @Component({
   selector: 'app-todos',
@@ -28,16 +30,36 @@ export class TodosComponent implements OnInit {
     // Remove from server
     this.todoService.deleteTodo(todo).subscribe();
   }
-
+ 
+  
   addTodo(todot:any) {
-    this.todoService.addTodo(todot).subscribe(todo => {
-     
+    if(todot.name!="")
+    {
+      
+      this.todos=this.todos.filter(t => t.tname!="check todo");
+      var findtodo=this.todos.find(t => t.tname==todot.name);
+      if(isUndefined(findtodo))
+      {
+      this.todoService.addTodo(todot).subscribe(todo => {
+      
       this.todos.push({
         tname: todot.name,
         status:false,
         id:this.todos.length
       });
-    });
+      
+      });
+      }
+      else{
+        window.alert("todo already exists");
+      }
+    }
+    else{
+      window.alert("cannot add empty todo");
+    }
+    
+    
   }
-
+  
+ 
 }

@@ -1,6 +1,6 @@
 <div [ngClass]="setClasses()">
   <p>
-    <input
+    <input class='update'
       (change)="onToggle(todo)"
       type="checkbox"
       id="{{ todo.id }}"
@@ -12,6 +12,6 @@
     <label for="{{ todo.id }}">
       {{ todo.tname }}
     </label>
-    <button (click)="onDelete(todo)" class="del">X</button>
+    <button id='deltodo' (click)="onDelete(todo)" class="del">X</button>
   </p>
 </div>

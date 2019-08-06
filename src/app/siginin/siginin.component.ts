@@ -20,5 +20,6 @@ export class SigininComponent implements OnInit {
     this.servic.updateUrl(email);
     this.router.navigateByUrl("/todos");
   }
+  
 
 }
