@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~8.2.0",
     "@angular/router": "~8.2.0",
     "ajv": "^6.9.1",
+    "clover": "0.0.1",
     "git": "^0.1.5",
     "rxjs": "~6.5.2",
     "tslib": "^1.10.0",

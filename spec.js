@@ -43,7 +43,7 @@ describe('should open todo application ', function() {
   it('should update status of todo',function(){ 
     //check todolist  
     var todoelement=element(by.xpath('//*[@id="listtodos"]/div'));
-    var updatetodo=todoelement.element(by.xpath('//*[@id="635"]'));
+    var updatetodo=todoelement.element(by.xpath('//*[@id="644"]'));
     updatetodo.click();
     console.log("todo updated successfully");
     browser.sleep(500);
@@ -58,10 +58,7 @@ describe('should open todo application ', function() {
     expect(deletetodo.isSelected()).toBeFalsy();
     console.log("todo deleted successfully");
     browser.sleep(500);
-   
   });
-
   
-
 });
 
