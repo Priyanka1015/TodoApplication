@@ -28,6 +28,3 @@ exports.config = {
   }
 };
 
-
-
-
