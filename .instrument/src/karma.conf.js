@@ -1,9 +1,0 @@
-
-var __cov_prQ77wElRcH5XbldEycLXw = (Function('return this'))();
-if (!__cov_prQ77wElRcH5XbldEycLXw.__coverage__) { __cov_prQ77wElRcH5XbldEycLXw.__coverage__ = {}; }
-__cov_prQ77wElRcH5XbldEycLXw = __cov_prQ77wElRcH5XbldEycLXw.__coverage__;
-if (!(__cov_prQ77wElRcH5XbldEycLXw['C:\\Users\\priyankam\\Desktop\\todo-angular-master\\src\\karma.conf.js'])) {
-   __cov_prQ77wElRcH5XbldEycLXw['C:\\Users\\priyankam\\Desktop\\todo-angular-master\\src\\karma.conf.js'] = {"path":"C:\\Users\\priyankam\\Desktop\\todo-angular-master\\src\\karma.conf.js","s":{"1":0,"2":0},"b":{},"f":{"1":0},"fnMap":{"1":{"name":"(anonymous_1)","line":4,"loc":{"start":{"line":4,"column":17},"end":{"line":4,"column":35}}}},"statementMap":{"1":{"start":{"line":4,"column":0},"end":{"line":38,"column":2}},"2":{"start":{"line":5,"column":2},"end":{"line":37,"column":5}}},"branchMap":{}};
-}
-__cov_prQ77wElRcH5XbldEycLXw = __cov_prQ77wElRcH5XbldEycLXw['C:\\Users\\priyankam\\Desktop\\todo-angular-master\\src\\karma.conf.js'];
-__cov_prQ77wElRcH5XbldEycLXw.s['1']++;module.exports=function(config){__cov_prQ77wElRcH5XbldEycLXw.f['1']++;__cov_prQ77wElRcH5XbldEycLXw.s['2']++;config.set({basePath:'',frameworks:['jasmine','@angular-devkit/build-angular'],plugins:[require('karma-jasmine'),require('karma-phantomjs-launcher'),require('karma-jasmine-html-reporter'),require('karma-coverage-istanbul-reporter'),require('@angular-devkit/build-angular/plugins/karma')],client:{clearContext:false},coverageIstanbulReporter:{dir:require('path').join(__dirname,'../coverage'),reports:['html','lcovonly','text-summary'],fixWebpackSourcePaths:true},customLaunchers:{ChromeHeadlessCI:{base:'ChromeHeadless',flags:['--no-sandbox','--disable-gpu']}},reporters:['progress','kjhtml'],port:9876,colors:true,logLevel:config.LOG_INFO,autoWatch:true,browsers:['Chrome'],singleRun:false});};
