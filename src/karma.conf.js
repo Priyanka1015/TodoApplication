@@ -25,8 +25,8 @@ module.exports = function (config) {
       ChromeHeadlessCI: {
         base: 'ChromeHeadless',
         flags: ['--no-sandbox', '--disable-gpu']
-      },
-
+      }
+    },
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
