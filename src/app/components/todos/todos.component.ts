@@ -36,7 +36,7 @@ export class TodosComponent implements OnInit {
     if(todot.name!="")
     {
       
-      //this.todos=this.todos.filter(t => t.tname!="check todo");
+      this.todos=this.todos.filter(t => t.tname!="check todo");
       var findtodo=this.todos.find(t => t.tname==todot.name);
       if(isUndefined(findtodo))
       {
