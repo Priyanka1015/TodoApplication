@@ -3,7 +3,8 @@ var Jasmine2HtmlReporter=require('C://Users//priyankam//AppData//Roaming//npm//n
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
     capabilities: {
-      'browserName': 'chrome'
+      'browserName': 'chrome',
+      'unexpectedAlertBehaviour': 'accept'
     },
     specs: ['spec.js'],
     onPrepare: function(){

@@ -24,6 +24,7 @@ describe('should open todo application ', function() {
     console.log("Todolist page opened sucessfully");
     browser.sleep(500);
     expect(browser.getCurrentUrl()).toBe('http://localhost:4200/todos');
+    
   });
 
   it('should add todo',function(){

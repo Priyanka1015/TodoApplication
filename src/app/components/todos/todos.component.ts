@@ -20,6 +20,7 @@ export class TodosComponent implements OnInit {
     this.todoService.getTodos().subscribe(todos => {
       this.todos = todos;
       this.len  = this.todos.length;
+      //this.todos=this.todos.filter(t => t.tname!="check todo");
     });
   }
 
