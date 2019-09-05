@@ -1,7 +1,8 @@
 var Jasmine2HtmlReporter=require('protractor-jasmine2-html-reporter');
 const { SpecReporter } = require('jasmine-spec-reporter');
 exports.config = {
-    seleniumAddress: 'http://localhost:4444/wd/hub',
+    //seleniumAddress: 'http://localhost:4444/wd/hub',
+    seleniumServerJar: './node_modules/selenium-standalone-jar/bin/selenium-server-standalone-3.141.59.jar',
     capabilities: {
       'browserName': 'chrome',
       'unexpectedAlertBehaviour': 'accept'

@@ -33,6 +33,7 @@
     "protractor-istanbul-plugin": "^2.0.0",
     "protractor-jasmine2-html-reporter": "0.0.7",
     "rxjs": "~6.5.2",
+    "selenium-standalone-jar": "^3.141.59",
     "tslib": "^1.10.0",
     "xlsx": "^0.15.0",
     "zone.js": "^0.9.1"
