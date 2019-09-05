@@ -1,4 +1,4 @@
-const config = require('./conf.ts').config;
+const config = require('./conf.js').config;
 
 config.capabilities = {
   browserName: 'chrome',

@@ -16,9 +16,16 @@ export class SigininComponent implements OnInit {
   }
 
   onSubmit(email: string){
+    if(email!="")
+    {
     console.log(email)
     this.servic.updateUrl(email);
     this.router.navigateByUrl("/todos");
+    }
+    else
+    {
+      window.alert("enter valid email");
+    }
   }
   
 
