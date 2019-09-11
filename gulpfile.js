@@ -6,4 +6,8 @@ var angularProtractor = require('gulp-angular-protractor');
             .pipe(angularProtractor({
                 'configFile': 'conf.js',
             }))
+        .on('error', function(e) {
+                console.log(e);
+            })
+            .on('end', callback);
 });
