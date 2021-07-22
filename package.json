@@ -35,7 +35,7 @@
     "rxjs": "~6.5.2",
     "selenium-standalone-jar": "^3.141.59",
     "tslib": "^1.10.0",
-    "xlsx": "^0.15.0",
+    "xlsx": "^0.17.0",
     "zone.js": "^0.9.1"
   },
   "devDependencies": {
